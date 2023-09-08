@@ -21,8 +21,7 @@
 .paralax-box1,
 .paralax-box2,
 .paralax-box3,
-.paralax-box4,
-.paralax-box5 {
+.paralax-box4 {
     width: 100%;
     position: relative;
     background-color: var(--branco);
@@ -148,3 +147,37 @@ p {
     height: 400px;
 }
 
+/* Contato e endereço */
+.paralax-box3 {
+    background-image: url(../assets/parallax-imagem4.png);
+    height: 100%;
+    text-align: center;
+    padding: 40px 0px;
+}
+
+
+#contato h2{
+    display: inline;
+    padding: 10px 20px;
+    color: var(--branco);
+    background-color: var(--dourado);
+    font-weight: normal;
+}
+
+#contato p {
+    width: 500px;
+    margin: auto;
+    padding: 10px 0px;
+
+    text-align: center;
+    line-height: 30px;
+    background-color: var(--dourado);
+    color: var(--branco);
+    font-weight: bold;
+    text-shadow: 4px 4px 5px black;
+}
+
+#contato iframe {
+    margin: 50px auto;
+    width: 100%;
+}
