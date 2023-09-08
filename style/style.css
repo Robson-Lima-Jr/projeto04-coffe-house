@@ -1,24 +1,109 @@
 @charset "UTF-8";
 
+/* Gerais */
+
+:root {
+    --bejeClaro: #c4a47c;
+    --branco: #fff;
+    --preto: #000;
+    --dourado: #604829;
+    --cinzaEscuro: #666;
+    --cinzaClaro: #ACACAC;
+}
+
 * {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
 }
 
+.paralax-banner,
+.paralax-box1,
+.paralax-box2,
+.paralax-box3,
+.paralax-box4,
+.paralax-box5 {
+    width: 100%;
+    position: relative;
+    background-color: var(--branco);
+    background-attachment: fixed;
+    background-repeat: center;
+    background-size: cover;
+}
+
+#menu a,
+h2 {
+    font-family: 'Oswald', sans-serif;
+    text-decoration: none;
+}
+
+h1,
+h3 {
+    font-family: 'Fraunces', serif;
+}
+
+p {
+    font-family: 'Lato', sans-serif;
+}
+
 .container-base {
     width: 100%;
     min-width: 320px;
-    max-width: 1024px;
-    margin: 0px auto;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 10px;
 }
 
-.paralax-box {
-    width: 100vw;
+/* Menu */
+
+#menu {
+    width: 100%;
+    height: 70px;
+    background-color: var(--dourado);
+    position: fixed;
+    z-index: 1;
+}
+
+
+#menu img {
+    width: 70px;
+    position: absolute;
+    left: 10%;
+}
+
+#menu ul {
+    position: absolute;
+    right: 10%;
+    top: 20px;
+}
+
+#menu ul li {
+    display: inline;
+}
+
+#menu ul li a {
+    color: var(--bejeClaro);
+    margin-left: 10px;
+    text-shadow: 3px 3px 2px rgba(0, 0, 0, 0.699);
+}
+
+/* Banner com titulo */
+
+.paralax-banner {
+    background-image: url(../assets/parallax-imagem1.png);
     height: 100vh;
+    position: relative;
+    margin: 0 auto;
 }
 
-.banner {
-    background: black url(../assets/parallax-imagem1.png) no-repeat center fixed;
-    background-size: cover;
+.paralax-banner h1 {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 100%;
+    text-align: center;
+    color: var(--branco);
+    font-size: 70px;
 }
