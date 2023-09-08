@@ -50,7 +50,7 @@ p {
     width: 100%;
     min-width: 320px;
     max-width: 900px;
-    margin: 0 auto;
+    margin: 40px auto;
     padding: 0 10px;
 }
 
@@ -92,7 +92,6 @@ p {
 .paralax-banner {
     background-image: url(../assets/parallax-imagem1.png);
     height: 100vh;
-    position: relative;
     margin: 0 auto;
 }
 
@@ -107,3 +106,45 @@ p {
     color: var(--branco);
     font-size: 70px;
 }
+
+/* Informações - paragrafos*/
+
+#info{
+    text-align: center;
+}
+
+#info .texto-info h2 {
+    color: var(--bejeClaro);
+    margin-bottom: 20px;
+}
+
+#info .texto-info p {
+    text-align: justify;
+}
+
+/* Informações paralax */
+
+#info h3{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    padding: 10px 20px;
+    color: var(--branco);
+    background-color: var(--dourado);
+    font-style: italic;
+    font-size: 30px;
+    font-weight: normal;
+}
+
+#info .paralax-box1 {
+    background-image: url(../assets/parallax-imagem2.jpg);
+    height: 400px;
+}
+
+#info .paralax-box2 {
+    background-image: url(../assets/parallax-imagem3.jpg);
+    height: 400px;
+}
+
