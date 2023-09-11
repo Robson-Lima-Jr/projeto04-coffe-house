@@ -236,3 +236,31 @@ li {
 }
 
 /* Rodape */
+.rodape {
+    position: relative;
+    background-color: #000;
+    padding: 30px 0px;
+}
+
+.rodape img {
+    position: absolute;
+    width: 50px;
+    right: 30px;
+    top: -25px;
+}
+
+.rodape p {
+    color: var(--branco);
+    text-align: center;
+    line-height: 32px;
+}
+
+.rodape a {
+    color: var(--bejeClaro);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.rodape .container-base {
+    margin: 0px auto;
+}
