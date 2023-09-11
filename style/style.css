@@ -41,8 +41,12 @@ h3 {
     font-family: 'Fraunces', serif;
 }
 
-p {
+p{
     font-family: 'Lato', sans-serif;
+}
+
+li {
+    list-style-type: none;
 }
 
 .container-base {
@@ -155,6 +159,9 @@ p {
     padding: 40px 0px;
 }
 
+#contato .container-base{
+    margin-bottom: 0px;
+}
 
 #contato h2{
     display: inline;
@@ -181,3 +188,51 @@ p {
     margin: 50px auto;
     width: 100%;
 }
+
+/* Horarios */
+.paralax-box4 {
+    background-image: url(../assets/cafeteria.jpg);
+    padding-bottom: 80px;
+}
+
+.paralax-box4 .container-base {
+    margin-top: 0px;
+    color: var(--branco)
+}
+
+#horario h2 {
+    text-align: center;
+    padding: 70px 0px;
+}
+
+#horario ul li {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
+}
+
+#horario ul li h3 ,#horario ul li p {
+    width: 20%;
+}
+
+#horario ul li h3 {
+    text-align: left;
+}
+#horario ul li p {
+    text-align: right;
+}
+
+#horario ul li .linha {
+    align-items: center;
+    width: 60%;
+    height: 1px;
+    background-color: var(--branco);
+    margin-top: 11px;
+}
+
+#horario .config-color {
+    color: var(--bejeClaro);
+    font-weight: bold;
+}
+
+/* Rodape */
